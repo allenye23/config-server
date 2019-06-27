@@ -6,10 +6,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/tw-cloud-native/configs.git
+          uri: https://github.com/allenye23/configs.git
           skipSslValidation: true
           #TODO: support common config
-          search-paths: '{profile}/{application}'
+          search-paths: '{profile}/common, {profile}/{application}'
 eureka:
   instance:
     prefer-ip-address: true
